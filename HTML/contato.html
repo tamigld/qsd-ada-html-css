@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <!--HEADER SÓ PRA MELHOR VISUALIZAÇÃO, PODE IGNORAR QUE NÃO FOI PASSADO EM AULA-->
+        <div> <!-- logo aleatória só para visualização -->
+            <img src="https://images.freeimages.com/vhq/images/previews/214/generic-logo-140952.png" alt="Logo do site">
+        </div>
+        <nav>  <!-- links de navegação -->   
+            <a href="index.html">Página inicial</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="contato.html">Contato</a>
+            <a href="fale-conosco.html">Fale conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/teste" method="post"> <!--formulário de envio (POST = enviar, GET = puxar)-->
+            <div>
+                <h1>Contato</h1>
+                <label for="nome">Nome:</label> <!--o "for" corresponde ao "id" do input desejado-->
+                <input type="text" value="Nome completo" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="option">Você tem conta?</label>
+                <input type="radio" name="option" id="option"> Sim
+                <input type="radio" name="option" id="option"> Não
+                <input type="radio" name="option" id="option"> Talvez
+            </div>
+            <div>
+                <p>Qual estado você nasceu?</p>
+                <select name="" id=""> <!--dropdown de seleção de opções-->
+                    <option value="São Paulo" name="estado">SP</option>
+                    <option value="Rio de Janeiro" name="estado">RJ</option>
+                    <option value="Amazonas" name="estado">AM</option>
+                    <option value="Tocantis" name="estado">TO</option>
+                </select>
+            </div>
+            <div>
+                <p>Descrição</p>
+                <div>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea> <!--caixa de texto para digitar-->
+                </div>
+            </div>
+            <input type="submit" value="Enviar"> <!--input de tipo botão para enviar as infos do form-->
+        </form>
+    </main>
+</body>
+</html>
