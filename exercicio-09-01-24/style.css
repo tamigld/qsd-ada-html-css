@@ -1,0 +1,94 @@
+:root{
+    --montserrat: 'Montserrat', 'sans-serif';
+    --branco: #ffffff;
+    --preto: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--montserrat);
+
+    color: var(--branco);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+label,
+span{
+    margin-bottom: 10px;
+}
+
+body{
+    background-image: url(https://burst.shopifycdn.com/photos/mountain-magic-hour.jpg?width=1000&format=pjpg&exif=0&iptc=0);
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    background-color: rgba(3, 30, 88, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.18);
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+h3{
+    margin: 15px 0;
+}
+
+input,
+textarea{
+    transition: ease-in 0.2s all;
+    background-color: rgb(255, 255, 255, 0.5);
+    
+    border-radius: 20px;
+    border: none;
+    padding: 5px 15px;
+
+    color: var(--preto);
+    font-weight: 500;
+    resize: none;
+}
+
+input[type=submit],
+input[type=reset]{
+cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: aqua;
+    scale: 1.1;
+}
+
+input[type=reset]:hover{
+    background-color: rgb(48, 48, 48);
+    color: var(--branco);
+    scale: 1.1;
+}
