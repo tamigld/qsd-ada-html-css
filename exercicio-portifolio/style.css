@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--montserrat);
+}
+
+
+:root{
+    --federalBlue: #1E004F;
+    --flashWhite: #EAEDF0;
+    --white: #ffffff;
+    --black: #000000;
+    --raisinBlack: #18141A;
+    --raisinGrey: #2A2B30;
+    --purple: #9B5EFF;
+    --blue: #1C76E5;
+
+    --montserrat: 'Montserrat', 'sans-serif;'
+}
+
+header{
+    background-color: var(--flashWhite);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 100px;
+}
+
+.bt_base{
+    transition: ease-in 0.2s all;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 600;
+    border: var(--purple) 3px solid;
+    border-radius: 10px;
+}
+
+.bt_base:hover{
+    border: var(--blue) 3px solid;
+    box-shadow: 0px 0px 33px -17px rgba(28,118,229,1);
+}
+
+.logo{
+    font-size: 20px;
+}
+
+.logo p{
+    color: var(--purple);
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+}
+
+header>a{
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+/*  */
+
+main>section:first-child{
+    background-color: var(--raisinBlack);
+    color: var(--white);
+
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 0;
+}
+
+.greetings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greetings>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    position: relative;
+
+    left: 10%;
+    z-index: 1;
+}
+
+.greetings>div:nth-child(1)>div h2,
+.greetings>div:nth-child(1)>div h1{
+    font-size: 40px;
+}
+
+.greetings>div>span{
+    font-size: 14px;
+}
+
+.greetings div:nth-child(1) hr{
+    margin-top: 5px;
+    width: 200px;
+    border: var(--white) 3px solid;
+}
+
+.greetings img{
+    width: 500px;
+    position: relative;
+    right: 5%;
+}
+
+.greetings>div:nth-child(1)>a{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--white);
+    padding: 10px 15px;
+}
+
+.bt_descer{
+    width: 30px;
+}
