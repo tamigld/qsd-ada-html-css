@@ -12,8 +12,9 @@
     --flashWhite: #EAEDF0;
     --white: #ffffff;
     --black: #000000;
+    --darkGrey: #120E13;
     --raisinBlack: #18141A;
-    --raisinGrey: #2A2B30;
+    --lightGrey: #2A2B30;
     --purple: #9B5EFF;
     --blue: #1C76E5;
 
@@ -108,7 +109,7 @@ main>section:first-child{
     font-size: 14px;
 }
 
-.greetings div:nth-child(1) hr{
+hr{
     margin-top: 5px;
     width: 200px;
     border: var(--white) 3px solid;
@@ -129,4 +130,97 @@ main>section:first-child{
 
 .bt_descer{
     width: 30px;
+}
+
+/*  */
+
+.container-about-me{
+    background-color: var(--darkGrey);
+    color: var(--white);
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 100px;
+}
+
+.about-me p:nth-child(1){
+    text-align: end;
+    width: 40%;
+    font-size: 14px;
+}
+
+.about-me p:nth-child(2){
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    width: 20%;
+}
+
+.about-me p:nth-child(3){
+    text-align: start;
+    width: 40%;
+    font-size: 14px;
+}
+
+.effect-gradient-top{
+    height: 50px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7203256302521008) 100%);
+}
+
+.effect-gradient-bottom{
+    height: 50px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7203256302521008) 100%);
+}
+
+/*  */
+.img-prev{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 15px 13px 37.2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.projetos{
+    padding: 80px 100px;
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
+
+.projetos h3{
+    font-size: 25px;
+    margin: 25px 0 40px 0;
+}
+
+.container-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.project>p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.project span{
+    width: 60%;
+    text-align: center;
+}
+
+.project small{
+    font-weight: 300;
 }
