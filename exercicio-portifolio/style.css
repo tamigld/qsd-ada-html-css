@@ -21,6 +21,10 @@
     --montserrat: 'Montserrat', 'sans-serif;'
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 header{
     background-color: var(--flashWhite);
 
@@ -29,6 +33,8 @@ header{
     align-items: center;
 
     padding: 15px 100px;
+
+    user-select: none;
 }
 
 .bt_base{
@@ -38,6 +44,11 @@ header{
     font-weight: 600;
     border: var(--purple) 3px solid;
     border-radius: 10px;
+    color: var(--black);
+}
+
+.bt_base:active{
+    color: var(--blue);
 }
 
 .bt_base:hover{
@@ -64,6 +75,11 @@ nav a{
     font-size: 14px;
 }
 
+nav a:hover{
+    transition: ease-in 0.1s all;
+    font-weight: 700;
+}
+
 header>a{
     font-size: 14px;
     padding: 5px 10px;
@@ -71,7 +87,13 @@ header>a{
 
 /*  */
 
+::selection{
+    color: var(--purple);
+}
+
 main>section:first-child{
+    height: calc(100vh - 80px);
+
     background-color: var(--raisinBlack);
     color: var(--white);
 
@@ -79,6 +101,7 @@ main>section:first-child{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     padding: 15px 0;
 }
@@ -129,14 +152,25 @@ hr{
 }
 
 .bt_descer{
-    width: 30px;
+    fill: var(--white);
+    transition: ease-in 0.1s all;
+}
+
+.bt_descer:hover{
+    fill: var(--blue);
 }
 
 /*  */
 
 .container-about-me{
+    height: calc(100vh);
     background-color: var(--darkGrey);
     color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about-me{
@@ -189,6 +223,9 @@ hr{
     padding: 80px 100px;
     background-color: var(--lightGrey);
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h3{
