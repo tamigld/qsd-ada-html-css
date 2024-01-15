@@ -286,7 +286,7 @@ hr{
     border-radius: 30px;
   }
   
-  /* This container is needed to position the front and back side */
+  /* p/ posicionar frente e verso */
   .flip-card-inner {
     position: relative;
     text-align: center;
@@ -294,24 +294,24 @@ hr{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* flip horizontal no hover */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
+  /* p/ posicionar frente e verso */
   .flip-card-front, .flip-card-back {
     position: absolute;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  /* estilo frente (fallback se não tiver img) */
   .flip-card-front {
     color: black;
   }
   
-  /* Style the back side */
+  /* estilo verso */
   .flip-card-back {
     transform: rotateY(180deg);
   }

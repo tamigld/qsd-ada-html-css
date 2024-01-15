@@ -1,0 +1,44 @@
+body{
+    margin: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border: black 1px solid;
+    padding: 20px;
+}
+
+header div{
+    border: black 1px solid;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAV */
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    padding: 40px 0;
+}
+
+/* CONTAINER */
+
+.container{
+    border: black 1px solid;
+    margin: 20px;
+    padding: 5px 15px;
+}
+
+/* MAIN */
+
+main{
+    border: black 1px solid;
+}
