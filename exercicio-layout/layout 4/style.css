@@ -1,0 +1,88 @@
+body{
+    margin: 20px;
+    border: black 1px solid;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black 1px solid;
+    padding: 20px;
+}
+
+header>div{
+    border: black 1px solid;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header section div a{
+    padding-left: 10px;
+}
+
+/*  */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 80px;
+    margin: 20px;
+}
+
+/*  */
+
+main{
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "lateral imagem imagem features"
+    "lateral artigo artigo external"
+    ;
+    gap: 20px;
+}
+
+/*  */
+.artigo{
+    grid-area: artigo;
+}
+
+.imagem{
+    grid-area: imagem;
+}
+
+.external{
+    grid-area: external;
+}
+
+.features{
+    grid-area: features;
+}
+
+.lateral{
+    grid-area: lateral;
+}
+
+nav,
+main>section,
+main>img,
+main>article,
+main>aside,
+main>div{
+    padding: 15px 20px;
+    border: black 1px solid; 
+}
