@@ -25,19 +25,20 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
 
-    height: 110px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 80px;
+    padding: 20px 40px;
+
+    /* position: fixed; */
 }
 
 header>div:nth-child(1){
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 40px;
     gap: 5px;
+    padding-left: 40px;
     color: var(--branco);
 }
 
@@ -79,35 +80,79 @@ header>div:nth-child(1){
 header>div>.btn{
     margin-left: 15px;
 }
+
+/* MAIN */
+
+main{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: 
+    "categorias main ad"
+    "categorias main ad"
+    ;
+    padding: 40px 0;
+}
+
+
 /* CATEGORIAS */
 
 .categorias{
-    width: 25%;
-    height: calc(100vh - 110px);
-    padding: 30px 40px;
+    /* width: 250px; */
+    height: 450px;
+    padding: 30px;
+    border-radius: 0 40px 40px 0;
     background-color: var(--roxoC);
     color: var(--branco);
     user-select: none;
+    box-shadow: 0px 14px 31px 0px rgba(0,0,0,0.48);
 
-    position: fixed;
+    /* position: fixed; */
+    top: 130px;
+
+    display: flex;
+    flex-direction: column;
+
+    grid-area: categorias;
+}
+
+.scroll{
+    height: 100%;
+    color: var(--branco);
+    user-select: none;
+
     overflow-y: scroll;
 
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 20px 20px 20px 0;
+    margin-top: 10px;
+    /* position: relative; */
 }
 
-.categorias details > summary{
+.scroll-footer{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.categorias{
+    overflow: hidden;
+}
+
+
+.categorias div details > summary{
     cursor: pointer;
     list-style-type: none;
     position: relative;
 }
 
-.categorias details{
+.categorias div details{
     margin-left: 20px;
 }
 
-.categorias details > summary::before{
+.categorias div details > summary::before{
     content: '';
     border-width: .4rem;
     border-style: solid;
@@ -120,7 +165,7 @@ header>div>.btn{
     transition: .25s transform ease;
 }
 
-.categorias details[open] > summary:before {
+.categorias div details[open] > summary:before {
     transform: rotate(90deg);
 }
 
@@ -141,17 +186,40 @@ header>div>.btn{
     width: 5px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: grey;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--roxo);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--roxo);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+background: grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--roxo);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: var(--roxo);
+}
+
+/* PROPAGANDA */
+
+.ad{
+    height: 450px;
+    padding: 30px;
+    border-radius: 40px 0 0 40px;
+    background-color: var(--roxo);
+    color: var(--branco);
+    user-select: none;
+    box-shadow: 0px 14px 31px 0px rgba(0,0,0,0.48);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+
+    grid-area: ad;
+}
+
+.ad img{
+    width: 200px;
+}
