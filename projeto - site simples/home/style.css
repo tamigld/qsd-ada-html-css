@@ -171,7 +171,7 @@ article{
 /* CATEGORIAS */
 
 .categorias{
-    height: 450px;
+    height: 65vh;
     width: 230px;
     padding: 30px;
     border-radius: 0 40px 40px 0;
@@ -276,7 +276,7 @@ background: var(--roxo);
 /* PROPAGANDA */
 
 .ad-container{
-    height: 450px;
+    height: 65vh;
     width: 230px;
     padding: 30px;
     border-radius: 40px 0 0 40px;
