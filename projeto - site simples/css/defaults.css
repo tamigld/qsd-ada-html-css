@@ -34,6 +34,7 @@ input:-webkit-autofill:active{
 
 
 .btn{
+    width: fit-content;
     transition: ease all 0.2s;
     padding: 10px 15px;
     border: var(--branco) solid 1px;
@@ -56,6 +57,7 @@ input:-webkit-autofill:active{
 }
 
 .btn-light{
+    width: fit-content;
     transition: ease all 0.2s;
     padding: 10px 15px;
     border: var(--roxo) solid 1px;
@@ -100,6 +102,12 @@ input:-webkit-autofill:active{
 
 .link:hover{
     color: var(--verdeC);
+}
+
+.card-dft{
+    background-color: var(--cinzaC);
+    padding: 40px;
+    border-radius: 30px;
 }
 
 .card{
