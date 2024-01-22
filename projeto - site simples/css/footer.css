@@ -1,0 +1,14 @@
+footer{
+    background-color: var(--roxo);
+    padding: 15px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--branco);
+    user-select: none;
+}
+
+footer>div:nth-child(2){
+    display: flex;
+    gap: 10px;
+}

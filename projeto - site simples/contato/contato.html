@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/defaults.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="shortcut icon"
         href="https://cdn0.iconfinder.com/data/icons/coffee-shop-44/64/breakfast_lunch_food_meal-512.png"
         type="image/x-icon">
@@ -41,18 +42,30 @@
             <div class="redes">
                 <h3>Redes Sociais</h3>
                 <div class="redes-icons">
-                    <a class="btn-icon" href="#" style="text-decoration: none;">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a class="btn-icon" href="#" style="text-decoration: none;">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="btn-icon" href="#" style="text-decoration: none;">  
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <a class="btn-icon" href="#" style="text-decoration: none;">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
+                    <div>
+                        <a class="btn-icon" href="#" style="text-decoration: none;">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <span class="redes-icons-span">Facebook</span>
+                    </div>
+                    <div>
+                        <a class="btn-icon" href="#" style="text-decoration: none;">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <span class="redes-icons-span insta">Instagram</span>
+                    </div>
+                    <div>
+                        <a class="btn-icon" href="#" style="text-decoration: none;">  
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <span class="redes-icons-span email">E-mail</span>
+                    </div>
+                    <div>
+                        <a class="btn-icon" href="#" style="text-decoration: none;">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <span class="redes-icons-span x">X</span>
+                    </div>
                 </div>
                 <small>&copy; 2024 Política de privacidade</small>
             </div>
@@ -75,8 +88,24 @@
                 <textarea class="textarea" name="descricao" id="descricao" placeholder="Descrição" required></textarea>
                 <label class="label-textarea" for="name">Descrição</label>
             </div>
-            <button type="submit" class="btn-light">Enviar</button>
+            <div>
+                <button type="submit" class="btn-light">Enviar</button>
+                <button type="reset" class="btn-light">Limpar</button>
+            </div>
         </form>
     </main>
+    <footer>
+        <div>
+            <p>GastroGênio</p>
+            <small>&copy; 2024 Política de privacidade</small>
+        </div>
+        <div>
+            <a href="../home/index.html" class="link">Página inicial</a>
+            <hr>
+            <a href="../contato/contato.html" class="link">Fale conosco</a>
+            <hr>
+            <a href="../about/about.html" class="link">Sobre</a>
+        </div>
+    </footer>
 </body>
 </html>
